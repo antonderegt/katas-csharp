@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Katas</name>
+    </assembly>
+    <members>
+        <member name="T:Katas.PascalCaseConverter.PascalCaseConverter">
+            <summary>
+            Converts a string to CamelCase.
+            </summary>
+        </member>
+        <member name="M:Katas.PascalCaseConverter.PascalCaseConverter.Convert(System.String)">
+            <summary>
+            Converts a string to CamelCase.
+            </summary>
+            <param name="sentence">Input sentence</param>
+            <returns>PascalCase string</returns>
+        </member>
+        <member name="M:Katas.PascalCaseConverter.PascalCaseConverter.FilterInput(System.String)">
+            <summary>
+            Filters extra spaces and special characters from sentence.
+            </summary>
+            <param name="sentence">Input sentence</param>
+            <returns>Filtered string</returns>
+        </member>
+        <member name="M:Katas.PascalCaseConverter.PascalCaseConverter.MakePascalCase(System.String[])">
+            <summary>
+            Converts a string array to CamelCase.
+            </summary>
+            <param name="words">String array</param>
+            <returns>PascalCase string</returns>
+        </member>
+        <member name="T:Katas.RemoveLetters.RemoveLetters">
+            <summary>
+            This class can remove certain letters from string arrays.
+            </summary>
+        </member>
+        <member name="M:Katas.RemoveLetters.RemoveLetters.ArrayOccurenceIsHigher(System.String,System.String,System.String[])">
+            <summary>
+            Checks if a letter occurce more in the array or in the word.
+            </summary>
+            <param name="ch">Letter to count</param>
+            <param name="word">The word on which the letter is counted</param>
+            <param name="letters">The array on which the letter is counted</param>
+            <returns>True if occurence of letter is higher in array, otherwise false</returns>
+        </member>
+        <member name="M:Katas.RemoveLetters.RemoveLetters.RemoveLettersFromArray">
+            <summary>
+            Remove letters from an array of letters.
+            </summary>
+            <returns>String array of remaining letters</returns>
+        </member>
+    </members>
+</doc>
