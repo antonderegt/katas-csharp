@@ -4,6 +4,30 @@
         <name>Katas</name>
     </assembly>
     <members>
+        <member name="T:Katas.LargestDifference.LargestDifference">
+            <summary>
+            Calculates the largest difference between numbers in an array and the number of consecutive pairs that sum up to that value.
+            </summary>
+        </member>
+        <member name="M:Katas.LargestDifference.LargestDifference.#ctor(System.Int32[])">
+            <summary>
+            Initializes the class.
+            </summary>
+            <param name="nums">Input array of integers</param>
+        </member>
+        <member name="M:Katas.LargestDifference.LargestDifference.LargestDiff">
+            <summary>
+            Calculates the largest difference between numbers in the array.
+            </summary>
+            <returns>int of the largest difference</returns>
+        </member>
+        <member name="M:Katas.LargestDifference.LargestDifference.NumberOfPairs">
+            <summary>
+            Calculates number of pairs that sum up to the largest difference
+            </summary>
+            <returns>int of number of pairs</returns>
+            <exception cref="T:System.ArgumentException">When largest difference is below 0</exception>
+        </member>
         <member name="T:Katas.PascalCaseConverter.PascalCaseConverter">
             <summary>
             Converts a string to CamelCase.
@@ -29,6 +53,20 @@
             </summary>
             <param name="words">String array</param>
             <returns>PascalCase string</returns>
+        </member>
+        <member name="M:Katas.Reducto.Reducto.SumDigProd(System.Int32[])">
+            <summary>
+            Sums up all input values and calculates the product of the digits of the sum until the result is a single digit.
+            </summary>
+            <param name="list">Unknown number of ints</param>
+            <returns>Single digit</returns>
+        </member>
+        <member name="M:Katas.Reducto.Reducto.ProductOfDigits(System.Int32)">
+            <summary>
+            Calculates the product of the individual digits in a number.
+            </summary>
+            <param name="number">Number of any length</param>
+            <returns>Product of digits</returns>
         </member>
         <member name="T:Katas.RemoveLetters.RemoveLetters">
             <summary>
