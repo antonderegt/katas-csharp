@@ -18,13 +18,13 @@ namespace KatasTests
             Assert.Equal(expected, actual);
         }
 
-        [Fact]
-        public void LargestDiff_NumbersBetween1And11_ShouldReturnLargestDfference()
+        [Theory]
+        [InlineData(10, new int[] { 2, 3, 1, 7, 9, 5, 11, 3, 5 })]
+        [InlineData(9, new int[] { 2, 3, 11, 7, 9, 5, 1, 3, 5 })]
+        public void LargestDiff_NumbersBetween1And11_ShouldReturnLargestDfference(int expected, int[] input)
         {
             // Arrange
-            int[] input = { 2, 3, 1, 7, 9, 5, 11, 3, 5 };
             LargestDifference ld = new(input);
-            int expected = 10;
             //// Act
             int actual = ld.LargestDiff();
             //// Assert
@@ -40,7 +40,7 @@ namespace KatasTests
             ld.LargestDiff();
             int expected = 4;
             //// Act
-            int actual = ld.LargestDiff();
+            int actual = ld.NumberOfPairs();
             //// Assert
             Assert.Equal(expected, actual);
         }

@@ -25,18 +25,18 @@ namespace Katas.LargestDifference
         }
 
         /// <summary>
-        /// Calculates the largest difference between numbers in the array.
+        /// Calculates the largest (consecutive) difference between numbers in the array.
         /// </summary>
         /// <returns>int of the largest difference</returns>
         public int LargestDiff()
         {
-            foreach (var num in Numbers)
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                Min = num < Min ? num : Min;
-                Max = num > Max ? num : Max;
+                int currentValue = Numbers[i];
+                int upcommingMax = Numbers.Skip(i).Max();
+                int currentDiff = upcommingMax - currentValue;
+                Diff = Diff > currentDiff ? Diff : currentDiff;
             }
-
-            Diff = Max - Min;
 
             return Diff;
         }
